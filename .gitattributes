@@ -1,0 +1,1 @@
+static/textures/envmap.exr filter=lfs diff=lfs merge=lfs -text
