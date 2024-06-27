@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    
+</head>
+<body>
+    
+    <div class="loading">
+        <div class="word-clock">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>  
+             <span>N</span> 
+            <span>G</span> 
+            <span>.</span> 
+            <span>.</span> 
+            <span>.</span> 
+          </div>
+    </div>
+    <canvas class="webgl"></canvas>
+    <script>
+        const words = document.querySelectorAll("span");
+    
+    let countery = -1;
+    let counterx = -1;
+    let basex = 20
+    let basey = 20
+    
+    words.forEach((word, ind) => {
+      basex+=10;
+      basey+=10;
+      let tempbasex = basex;
+      let tempbasey = basey;
+      ind +=4;
+    //   console.log("index", ind)
+      if((ind-2) % 4 == 0){
+        countery = countery * -1;
+        // console.log("countery", countery)
+      }
+      if(ind % 4 == 0){
+        counterx = counterx * -1;
+      }
+      
+      
+      if(ind % 4 ==1){
+        tempbasey = 0;
+      }
+      if(ind % 4 == 3){
+        tempbasex = 0;
+      }
+       if(tempbasex == tempbasey){
+         tempbasex-=ind*2;
+         tempbasey-=ind*2;
+       }
+    //   console.log(tempbasex* counterx, tempbasey* countery);
+      word.style.top = tempbasey * countery + "px";
+      word.style.left = tempbasex * counterx + "px";
+      word.style.fontSize = 8 + 0.5*ind + "px";
+    })
+    
+        </script>
+    
+</body>
+
+</html>

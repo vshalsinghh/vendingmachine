@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low poly street light pole
+* source:	https://sketchfab.com/3d-models/low-poly-street-light-pole-06ceb70f4a4d48119d926caf40caf78b
+* author:	pino (https://sketchfab.com/toomuchpino)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low poly street light pole" (https://sketchfab.com/3d-models/low-poly-street-light-pole-06ceb70f4a4d48119d926caf40caf78b) by pino (https://sketchfab.com/toomuchpino) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
